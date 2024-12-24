@@ -1,0 +1,164 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(160, 190, 202) ;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    
+}
+.container1{
+    padding: 20px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 140px;
+    height: 140px;
+}
+.name{
+    color:rgba(3, 176, 244, 0.75);
+    font-weight: bold;
+    text-decoration: underline;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* Create a dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the dropdown button */
+  .dropdown-btn {
+    background-color: inherit;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  /* Style the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   
+    z-index: 1;
+    text-decoration: none;
+    
+  }
+  /* Show the dropdown content on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(160, 190, 202);
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: black;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.review {
+    text-align: center;
+}
+
+.review img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.review p {
+    margin: 0;
+}
+
+.review span {
+    color: #007bff;
+}
+
+
+/*----------------------CSS for small screen--------------------*/
+
+@media screen and (max-width: 600px){
+
+    nav ul{
+        background: skyblue;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+  
+}
+
+
+
+
